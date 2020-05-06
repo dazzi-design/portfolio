@@ -1,0 +1,350 @@
+/* style.css */
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {text-decoration: none;}
+ul { list-style-type: none;}
+
+
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+/* 해더 */
+#header {
+    margin: 0 auto;
+    width: 1200px;
+    height: 160px;
+    /* outline: 1px solid red; */
+    text-align: center;
+}
+#header > h1 {
+    font-size: 72px;
+    height: 80px;
+    line-height: 80px;
+    text-transform: uppercase;
+    margin-top: 30px;
+    
+}
+#header > nav {
+    height: 30px;
+    /* outline: 1px solid red; */
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 20px;
+}
+#header > nav ul li{
+    display: inline-block;
+}
+#header > nav ul li a {
+    color: #000;
+    margin: 30px;
+}
+#header > nav ul li a:hover {
+    background: #5AB3EE;
+    color: #fff;
+    
+}
+/* 메인비주얼 */
+#main_visual {
+    width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+/* ======공통 타이틀===== */
+.title {
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+    background: #000;
+    color: #fff;
+}
+
+/* 캐릭터&일러스트 */
+#character{
+    margin: 0 auto;
+    width: 1200px;
+    height: 1000px;
+    padding-top: 10px;
+    /* outline: 1px solid red; */
+}
+#character img {
+    width: 367px;
+    height: 367px;
+}
+
+/* 호버기능 추가하기 */
+#character .col {
+    position: relative;
+    width: 367px;
+    height: 367px;
+    /* margin-right: 20px; */
+    margin-left: 25px;
+    float: left;
+    overflow: hidden;
+    /* outline: 1px solid green; */
+    margin-top: 20px;
+    box-shadow: 4px 4px 4px #ccc;
+}
+
+#character .col:hover .cover {
+    position: absolute;
+    background: #5AB3EE;
+    opacity: 0.9;
+    left: 0;top: 0;
+    width: 100%; height: 100%;
+}
+#character .cover {
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 140px;
+}
+
+/* 광고 */
+
+#advertisement {
+    margin: 0 auto;
+    width: 1200px;
+    height: 1567px;
+    background: #ccc; 
+}
+#advertisement .title {
+    /* outline: solid 1px black; */
+    height: 100px;
+    color: #fff;
+    background: #000;
+}
+#advertisement > p {
+    height: 55px;
+    line-height: 55px;
+    /* outline: 1px solid red; */
+    text-align: center;
+    font-size: 25px;
+    /* color: #fff; */
+    margin-bottom: 15px;
+    margin-top: 20px;
+    font-weight: bolder;
+    
+    
+}
+#banner_vis {
+    width: 1100px;
+    /* height: 526px; */
+    /* outline: 1px solid red; */
+    margin-bottom: 50px;
+}
+#banner_vis > img {
+    width: 1100px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 4px #666 ;
+}
+#banner_vis > p {
+    /* outline: solid 1px #fff; */
+    text-align: center;
+    /* color: #fff; */
+    height: 30px;
+    line-height: 30px;
+    margin-top: 10px;
+}
+
+.banner {
+    width: 1200px;
+}
+#advertisement .banner img {
+    width: 570px;
+    height: 235px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.banner > p {
+    float: right;
+    width: 570px;
+    height: 235px;
+    /* padding-right: 20px; */
+    margin-right: 20px;
+    background: #fff;
+    padding: 20px;
+    padding-top: 50px;
+    font-size: 28px;
+    text-align: center;
+    /* color: #0BBB26; */
+}
+.banner > p > span {
+    font-size: 40px;
+    font-weight: bolder;
+}
+#banner2 {
+    /* outline: 1px solid red; */
+    position: relative;
+    overflow: hidden;
+}
+#banner2 > img {
+    float: right;
+    margin-right: 20px;
+}
+#banner2 > p {
+    float: left;
+    margin-left: 20px;
+    margin-right: 0;
+    background: #FFE181;
+    /* outline: 1px solid blue; */
+}
+#banner1 > p {
+    background: #FDEBFA;
+}
+
+/* 아이콘 */
+#icon {
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 80px;
+    background: #ccc;
+    margin-bottom: 80px;
+}
+/* 아이콘 수정하기 */
+
+#icon #icon-wrap {
+    width: 1200px;
+    /* outline: 1px solid red; */
+    padding: 80px;
+    /* margin-bottom: 80px; */
+    overflow: hidden;
+}
+
+#icon img {
+    
+    width: 460px;
+    /* outline: 1px solid blue; */
+    border-radius: 50px;
+    float: left;
+    box-shadow: 4px 4px 6px #666;
+}
+
+#icon-wrap .right img {
+    float: right;
+}
+#icon-wrap > p {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+
+
+/* 로고 */
+#logo {
+    width: 1200px;
+    margin: 0 auto;
+    outline: #000 5px solid;
+    margin-bottom: 80px;
+    clear: both;
+}
+/* #logo img {
+    가운데 정렬 못 맞추겟다.
+    width: 850px; 
+} */
+#logo .title {
+    background: #000;
+    color: #fff;
+}
+/* 모바일 */
+#mobile {
+    width: 1200px;
+    margin: 0 auto;
+    outline: #000 5px solid;
+    margin-bottom: 80px;
+    position: relative;
+}
+#mobile > button {
+    /* outline: 1px solid blue; */
+    position: absolute;
+    float: left;
+    left: 580px; top: 750px;
+    width: 200px; height: 40px;
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+}
+
+/* 웹 */
+#web {
+    width: 1200px;
+    margin: 0 auto;
+    /* outline: #000 5px solid; */
+    background: #cccccc;
+    margin-bottom: 80px;
+}
+#web > p {
+    text-align: center;
+    padding-bottom: 15px;
+    color: #fff;
+    background: #000;
+    /* outline: 1px solid red; */
+}
+#web-wrap {
+    width: 1200px;
+    /* height: 1239px; */
+    height: 1150px;
+    /* outline: 1px solid red; */
+    
+}
+#web-wrap div {
+    /* outline: solid 1px #ccc; */
+    margin-top: 20px;
+    box-shadow: 4px 4px 4px #ccc;
+    
+}
+#web-wrap div h3 {
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    background: #000;
+    /* color: #fff; */
+    color: yellow;
+}
+#web-wrap div p {
+    text-align: center;
+    font-size: 12px;
+    padding-bottom: 16px;
+    background: #000;
+    color: #ccc;
+}
+#web-wrap >.left {
+    /* position: absolute; */
+    float: left;
+    margin-left: 20px;
+}
+#web-wrap > .right {
+    /* position: absolute; */
+    float: right;
+    right: 0;
+}
+#web-wrap > .left img, #web > .right img {
+    width: 570px;
+    height: 918.89 px;
+}
+/* footer (contact) */
+#contact {
+    width: 1200px; height: 150px;
+    background: #000;
+    margin: 0 auto;
+    color: #ccc;
+    text-align: center;
+}
+#contact p{
+    padding-top: 30px;
+}
+#contact ul li {
+    display: inline-block;
+    margin: 20px;
+}
+#contact ul li a img {
+    width: 40px;
+}
+
